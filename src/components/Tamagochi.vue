@@ -24,7 +24,7 @@
               if(this.salud){
                   this.salud--;
               }
-          }, 30000)
+          }, 10000)
       },
       data(){
           return {
@@ -82,11 +82,19 @@
             width: 80%;
             margin: 10px auto;
             border: 2px solid black;
+            position: relative;
 
             .salud {
                 display: flex;
                 gap: 2px;
                 padding: 5px;
+            }
+
+            .animalito{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(4);
             }
         }
         .botones {
